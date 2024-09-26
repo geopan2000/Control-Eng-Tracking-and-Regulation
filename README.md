@@ -1,9 +1,11 @@
 # Control-Eng-Tracking-and-regulation
 
-## Overview
-This project involves analyzing and controlling the nonlinear dynamics of an inverted pendulum on a cart. The coursework tasks cover equilibrium point analysis, linearization, state-space modeling, and the design of controllers to regulate the system in the presence of external disturbances. MATLAB simulations are used to verify the control design.
+# Tracking and Regulation of an Inverted Pendulum on a Cart
 
-## Coursework Tasks
+## Overview
+This project involves the modeling, linearization, and control of an inverted pendulum mounted on a moving cart. The coursework includes equilibrium analysis, state-space representation, and the design of a controller to achieve regulation and tracking. MATLAB is used for simulating both linearized and nonlinear systems to assess the performance of the designed control laws.
+
+## Coursework Questions
 
 ### Part A: Analytical Tasks
 
@@ -24,28 +26,39 @@ This project involves analyzing and controlling the nonlinear dynamics of an inv
 - Show that the pair \( (A, B) \) is controllable.
 
 #### A5) Regulator Problem Setup
-- Pose the regulator problem to reject the disturbance \( d_1 \) and make the output \( s(t) \) track the reference signal \( d_2(t) = \alpha \sin(\omega t) \).
+- Formulate a regulator problem to reject the disturbance \( d_1 \) and make the first output \( s(t) \) track the reference signal \( d_2(t) = \alpha \sin(\omega t) \).
 
 #### A6) Full Information Control Law
-- Design a full information control law to solve the regulator problem from A5).
+- Design a full information control law to solve the regulator problem.
 
 #### A7) Error Feedback Control Law
-- Design an error feedback control law to solve the regulator problem from A5).
+- Design an error feedback control law to solve the regulator problem using the output \( y(t) \) and the error signal \( e(t) = s(t) - d_2(t) \).
 
 ### Part B: MATLAB Simulations
 
-#### B1) Design a Full Information Control Law
-- Assume \( d_1(t) \) is a square wave of amplitude 0.5 and period 50 s, \( \alpha = 1 \), and \( \omega = 0.1 \). Design a full information control law and provide the equations.
+#### B1) Full Information Control Law
+- Assume \( d_1(t) \) is a square wave with amplitude 0.5 and period 50s, \( \alpha = 1 \), and \( \omega = 0.1 \). Design a full information control law, show the steps, and provide the control law equations.
 
-#### B2) Plot \( y(t) \) and \( u(t) \)
-- Simulate the linear system for \( x(0) = 0 \) and plot the system output \( y(t) \) and control input \( u(t) \). Discuss the results and the effect of the disturbance \( d_1(t) \).
+#### B2) Simulation of Linear System
+- Simulate the linear system from B1 for \( x(0) = 0 \). Plot \( y(t) \) and \( u(t) \) and discuss why the disturbance \( d_1(t) \) does not affect the output.
 
-#### B3) Nonlinear Model Simulation
-- Simulate the nonlinear system using the same control law from B1 and plot \( y(t) \) and \( u(t) \). Discuss why the regulation goal is only approximately achieved.
+#### B3) Nonlinear System Simulation
+- Use the control law from B1 for the nonlinear model. Simulate for \( x(0) = 0 \), plot \( y(t) \) and \( u(t) \), and discuss why the disturbance \( d_1(t) \) does not affect the output and why regulation is only approximately achieved.
 
 #### B4) Varying \( \omega \)
-- Repeat simulations for \( \omega = 1 \) and \( \omega = 10 \). Discuss how changing \( \omega \) affects the results.
+- Repeat the simulations for \( \omega = 1 \) and \( \omega = 10 \). Discuss the impact of \( \omega \) on system performance.
 
 ## Files Included
 - **MATLAB Scripts**:
-  - Scripts for solving the regulator problem and running simulations for both linear and nonlinear models.
+  - Scripts for designing the control law and simulating both the linear and nonlinear models.
+  
+## How to Run
+1. Open the MATLAB files.
+2. Modify the system parameters, disturbance, and reference signals as needed.
+3. Run the simulations to observe the system's behavior and verify the control law.
+4. Analyze the plots of system output and control input to evaluate performance.
+
+## License
+This project is provided for educational purposes only.
+
+
