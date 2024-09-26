@@ -15,9 +15,9 @@ This project involves the modeling, linearization, and control of an inverted pe
 
 #### A3) State-Space Representation
 - Express the linearized dynamics in standard state-space form:
-  ```math
+  \[
   \dot{x} = A x + B u + P d_1
-  ```
+  \]
   where:
   - \( x(t) = egin{bmatrix} s(t), \dot{s}(t), \phi(t), \dot{\phi}(t) \end{bmatrix}^T \)
   - \( u(t) = \mu(t) \)
@@ -34,9 +34,9 @@ This project involves the modeling, linearization, and control of an inverted pe
 
 #### A7) Error Feedback Control Law
 - Design an error feedback control law to solve the regulator problem using the output \( y(t) \) and the error signal:
-  ```math
+  \[
   e(t) = s(t) - d_2(t)
-  ```
+  \]
 
 ### Part B: MATLAB Simulations
 
