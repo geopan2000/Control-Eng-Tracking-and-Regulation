@@ -1,4 +1,4 @@
-# Control-Eng-Tracking-and-regulation
+# Control-Eng-Tracking-and-Regulation
 
 ## Overview
 This project involves the modeling, linearization, and control of an inverted pendulum mounted on a moving cart. The coursework includes equilibrium analysis, state-space representation, and the design of a controller to achieve regulation and tracking. MATLAB is used for simulating both linearized and nonlinear systems to assess the performance of the designed control laws.
