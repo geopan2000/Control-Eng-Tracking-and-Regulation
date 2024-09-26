@@ -19,15 +19,15 @@ This project involves the modeling, linearization, and control of an inverted pe
   \dot{x} = A x + B u + P d_1
   \]
   where:
-  - \( x(t) = egin{bmatrix} s(t), \dot{s}(t), \phi(t), \dot{\phi}(t) \end{bmatrix}^T \)
+  - \( x(t) = begin{bmatrix} s(t), \dot{s}(t), \phi(t), \dot{\phi}(t) \end{bmatrix}^T \)
   - \( u(t) = \mu(t) \)
-  - \( y(t) = egin{bmatrix} s(t), \phi(t) \end{bmatrix}^T \)
+  - \( y(t) = begin{bmatrix} s(t), \phi(t) \end{bmatrix}^T \)
 
 #### A4) Controllability
 - Show that the pair \( (A, B) \) is controllable.
 
 #### A5) Regulator Problem Setup
-- Pose the regulator problem to reject the disturbance \( d_1 \) and make the first output \( s(t) \) track the reference signal \( d_2(t) = lpha \sin(\omega t) \).
+- Pose the regulator problem to reject the disturbance \( d_1 \) and make the first output \( s(t) \) track the reference signal \( d_2(t) = alpha \sin(\omega t) \).
 
 #### A6) Full Information Control Law
 - Design a full information control law to solve the regulator problem.
@@ -55,12 +55,3 @@ This project involves the modeling, linearization, and control of an inverted pe
 ## Files Included
 - **MATLAB Scripts**:
   - Scripts for designing the control law and simulating both the linear and nonlinear models.
-  
-## How to Run
-1. Open the MATLAB files.
-2. Modify the system parameters, disturbance, and reference signals as needed.
-3. Run the simulations to observe the system's behavior and verify the control law.
-4. Analyze the plots of system output and control input to evaluate performance.
-
-## License
-This project is provided for educational purposes only.
