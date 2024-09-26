@@ -41,7 +41,7 @@ This project involves the modeling, linearization, and control of an inverted pe
 ### Part B: MATLAB Simulations
 
 #### B1) Full Information Control Law
-- Assume \( d_1(t) \) is a square wave with amplitude 0.5 and period 50s, \( lpha = 1 \), and \( \omega = 0.1 \). Design a full information control law, show the steps, and provide the control law equations.
+- Assume \( d_1(t) \) is a square wave with amplitude 0.5 and period 50s, \( alpha = 1 \), and \( \omega = 0.1 \). Design a full information control law, show the steps, and provide the control law equations.
 
 #### B2) Simulation of Linear System
 - Simulate the linear system from B1 for \( x(0) = 0 \). Plot \( y(t) \) and \( u(t) \), and discuss why the disturbance \( d_1(t) \) does not affect the output.
